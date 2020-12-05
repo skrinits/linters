@@ -1,0 +1,4 @@
+rubocop:
+  name: 'name'
+  command: "echo 'test'"
+  warnings_number: 1

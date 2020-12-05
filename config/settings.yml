@@ -1,0 +1,9 @@
+linters:
+  rubocop:
+    warnings_number: 0
+  reek:
+    warnings_number: 0
+  bundle_audit:
+    warnings_number: 0
+  fasterer:
+    warnings_number: 0
