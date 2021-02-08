@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    linters (1.0.1)
+    linters (1.0.3)
       rake
 
 GEM
@@ -36,7 +36,7 @@ GEM
       ast (~> 2.4.0)
     psych (3.1.0)
     rainbow (3.0.0)
-    rake (12.3.1)
+    rake (13.0.3)
     reek (5.4.0)
       codeclimate-engine-rb (~> 0.4.0)
       kwalify (~> 0.7.0)
@@ -81,13 +81,13 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.16)
-  bundler-audit (~> 0.6.1)
-  byebug (~> 11.0.1)
-  fasterer (~> 0.5.1)
+  bundler-audit (~> 0.6)
+  byebug (~> 11.0)
+  fasterer (~> 0.5)
   linters!
-  reek (~> 5.4.0)
+  reek (~> 5.4)
   rspec (~> 3.0)
-  rubocop (~> 0.71.0)
+  rubocop (~> 0.71)
 
 BUNDLED WITH
-   1.17.2
+   1.17.3
