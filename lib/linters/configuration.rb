@@ -5,8 +5,8 @@ module Linters
 
     def initialize
       @custom_linters = {}
-      @linters = %i[rubocop reek bundle_audit fasterer]
-      @settings_path = 'config/settings.yml'
+      @linters = ENV.fetch('LINTERS_CHECKERS', %i[rubocop reek bundle_audit fasterer])
+      @settings_path = ENV.fetch('LINTERS_SETTING_PATH', 'config/settings.yml')
     end
   end
 end

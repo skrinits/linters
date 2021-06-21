@@ -39,7 +39,7 @@ module Linters
     end
 
     def warnings_number
-      settings.fetch(:warnings_number) { 0 }
+      ENV.fetch("LINTERS_#{ name.upcase }_NUMBER_WARNINGS", settings.fetch(:warnings_number) { 0 })
     end
 
     def command
