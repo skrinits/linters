@@ -74,7 +74,7 @@ If settings is absent that warnings_number equal zero.
     config.custom_linters = {
       name: {
         command: 'execute command',
-        parse_output: 'parse output of the command for getting quantity of warnings'
+        parse_output: lambda { |output| 'parse output of the command for getting quantity of warnings' }
       }
     }
   end
@@ -86,7 +86,7 @@ If settings is absent that warnings_number equal zero.
     config.custom_linters = {
       rubocop: {
         command: 'your command',
-        parse_output: 'your parsing output'
+        parse_output: lambda { |output| 'your parsing output' }
       }
     }
   end

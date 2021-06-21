@@ -9,7 +9,8 @@ Gem::Specification.new do |spec|
   spec.email         = ['110100reg@gmail.com']
 
   spec.summary       = "Tool checks ruby applications using different code's analyzers."
-  spec.description   = 'Check of ruby applications using rubocop, reek, brakeman, fasterer, bundle_audit and the other custom linters'
+  spec.description   = 'Check of ruby applications using rubocop, reek, brakeman, fasterer,'\
+                       ' bundle_audit and the other custom linters'
   spec.homepage      = 'https://github.com/skrinits/linters'
   spec.license       = 'MIT'
 
