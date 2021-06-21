@@ -1,4 +1,9 @@
 linters:
+  checkers:
+    - rubocop
+    - reek
+    - bundle_audit
+    - fasterer
   rubocop:
     warnings_number: 0
   reek:

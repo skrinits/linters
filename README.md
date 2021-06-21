@@ -49,13 +49,18 @@ Settings with default values:
   Linters.configure do |config|
     config.custom_linters = {}
     config.linters = %i[rubocop reek bundle_audit fasterer]
-    config.settings_path = 'config/settings.yml'
+    config.settings_path = 'config/linter_settings.yml'
   end
 ```
 
-Default config/settings.yml:
+Default config/linter_settings.yml:
 
 ```
+checkers:
+  - rubocop
+  - reek
+  - bundle_audit
+  - fasterer
 rubocop:
   warnings_number: 0
 reek:
