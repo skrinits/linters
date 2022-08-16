@@ -23,7 +23,7 @@ module Linters
         parse_output: ->(output) { JSON.parse(output).size }
       },
       rubocop: {
-        default_command: 'rubocop --format json',
+        default_command: 'rubocop --parallel --format json',
         parse_output: ->(output) { JSON.parse(output)['summary']['offense_count'] }
       }
     }.freeze
