@@ -56,19 +56,20 @@ Settings with default values:
 Default config/linter_settings.yml:
 
 ```
-checkers:
-  - rubocop
-  - reek
-  - bundle_audit
-  - fasterer
-rubocop:
-  warnings_number: 0
-reek:
-  warnings_number: 0
-bundle_audit:
-  warnings_number: 0
-fasterer:
-  warnings_number: 0
+linters:
+  checkers:
+    - rubocop
+    - reek
+    - bundle_audit
+    - fasterer
+  rubocop:
+    warnings_number: 0
+  reek:
+    warnings_number: 0
+  bundle_audit:
+    warnings_number: 0
+  fasterer:
+    warnings_number: 0
 ```
 
 If settings is absent that warnings_number equal zero.
